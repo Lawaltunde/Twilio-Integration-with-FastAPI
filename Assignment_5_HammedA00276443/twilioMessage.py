@@ -13,11 +13,11 @@ def sendMessage():
             f"\nThe present temperature in Sudbury, Canada, along with its weather conditions: {weather}\n"
             f"\nThe names of people currently in space and the total number of them: {iss}")
 
-    #TWILIO_ACCOUNT_SID = "ACf828ffaa242c44d5cb5ed5efa5360a20"
-    #TWILIO_AUTH_TOKEN = "da3d1fc6e7a18e0315ddcb8f55db5e88"
+    #TWILIO_ACCOUNT_SID = "addYourSID" #add correct unique key, already removed for mine for security purpose
+    #TWILIO_AUTH_TOKEN = "addYourTOKEN" #add correct unique key
 
-    account_sid = "ACf828ffaa242c44d5cb5ed5efa5360a20"
-    auth_token = "da3d1fc6e7a18e0315ddcb8f55db5e88"
+    account_sid = "addYourSID" #add correct unique key
+    auth_token = "addYourTOKEN" ##add correct unique key
     client =Client(account_sid, auth_token)
 
     message = client.messages.create(
